@@ -311,7 +311,7 @@ if _writeRad == True and _analysisRecipe!=None and ((len(_HBObjects)!=0 and _HBO
                 for branchNum in range(numOfBranches):
                     p = GH_Path(branchNum)
                     for ptCount in range(numOfPts[branchNum]):
-                        resValue = "%.2f"%values[totalPtsCount]
+                        resValue = "%.4f"%values[totalPtsCount]
                         exec(resultsOutputName + ".Add(resValue, p)")
                         totalPtsCount += 1
                 
